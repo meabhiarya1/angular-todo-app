@@ -1,0 +1,56 @@
+/* Base styles */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Component styles */
+  
+  .app-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .heading {
+    font-size: 2em;
+  }
+  
+  .content {
+    padding: 1em;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  @media only screen and (max-width: 768px) {
+    .app-component {
+      flex-direction: column;
+    }
+  
+    .heading {
+      font-size: 1.5em;
+    }
+  
+    .content {
+      padding: 0.5em;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .app-component {
+      flex-direction: row;
+    }
+  
+    .heading {
+      font-size: 2em;
+    }
+  
+    .content {
+      padding: 1em;
+    }
+  }
+  
