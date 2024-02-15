@@ -9,7 +9,7 @@ import { PostService } from '../post.service';
   standalone: true,
   imports: [CommonModule, RouterModule],
   templateUrl: './index.component.html',
-  styleUrl: './index.component.css'
+  styleUrl: './index.component.scss'
 })
 export class IndexComponent {
 

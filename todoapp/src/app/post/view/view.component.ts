@@ -9,7 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   standalone: true,
   imports: [],
   templateUrl: './view.component.html',
-  styleUrl: './view.component.css'
+  styleUrl: './view.component.scss'
 })
 export class ViewComponent {
 
