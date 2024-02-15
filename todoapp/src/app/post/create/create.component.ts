@@ -32,7 +32,7 @@ export class CreateComponent {
   submit(){
     console.log(this.form.value);
     this.postService.create(this.form.value).subscribe((res:any)=>{
-      alert("Post Created Successfull!.");
+      alert("Todo Created Successfully !!!");
       this.router.navigateByUrl('post/index');
     })
   }
