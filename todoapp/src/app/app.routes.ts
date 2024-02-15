@@ -1,14 +1,13 @@
 import { Routes } from '@angular/router';
-import { TodolistComponent } from './components/todo/todolist/todolist.component';
-import { LoginComponent } from './components/user/login/login.component';
-import { SignupComponent } from './components/user/signup/signup.component';
-import { NetworkerrorComponent } from './components/others/networkerror/networkerror.component';
+// import { IndexComponent } from './post/index/index.component';
+// import { CreateComponent } from './post/create/create.component';
+// import { EditComponent } from './post/edit/edit.component';
+// import { ViewComponent } from './post/view/view.component';
 
 export const routes: Routes = [
-    {path:'', redirectTo:'/login',pathMatch:'full'},
-    {path:'**', component:LoginComponent},
-    {path:'todo', component:TodolistComponent},
-    {path:'login', component:LoginComponent},
-    {path:'signup', component:SignupComponent},
-    {path:'network-error', component:NetworkerrorComponent},
-];
+  {path:'', redirectTo:'post/index', pathMatch:'full'},
+//   {path:'post/index', component:IndexComponent},
+//   {path:'post/create', component:CreateComponent},
+//   {path:'post/:postId/edit', component:EditComponent},
+//   {path:'post/:postId/view', component:ViewComponent}
+];  
