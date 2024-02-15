@@ -1,18 +1,18 @@
 <div class="container">
-    <h1 class="text-center">Update Todo</h1>
-    <a href="#" routerLink="/post/index" class=" btn btn-warning">Back</a>
+    <h1 class="text-center mt-5">Update Todo</h1>
+    <a href="#" routerLink="/post/index" class=" btn btn-warning  mb-3">Back</a>
   
     <form [formGroup]="form" (ngSubmit)="submit()">
     <div class="form-group">
-      <label for="title">Todo:</label>
-      <input type="text" id="title" formControlName="title" [(ngModel)]="post.title" class="form-control">
+      <label for="title" class="mb-3">Todo:</label>
+      <input type="text" id="title" formControlName="title" [(ngModel)]="post.title" class="form-control mb-3">
       <div *ngIf="f['title'].touched && f['title'].invalid" class="alert alert-danger">
         <div *ngIf="f['title'].errors && f['title'].errors['required']">Todo is Required.</div>
       </div>
     </div>
     <div class="form-group">
-      <label for="body">Description:</label>
-      <input type="text" id="body" formControlName="body" [(ngModel)]="post.body" class="form-control">
+      <label for="body" class="mb-3">Description:</label>
+      <input type="text" id="body" formControlName="body" [(ngModel)]="post.body" class="form-control mb-3">
       <div *ngIf="f['body'].touched && f['body'].invalid" class="alert alert-danger">
         <div *ngIf="f['body'].errors && f['body'].errors['required']">Description is Required.</div>
       </div>

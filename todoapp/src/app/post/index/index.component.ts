@@ -26,7 +26,7 @@ export class IndexComponent {
   deletePost(id:number){
     this.postService.delete(id).subscribe(res =>{
       this.posts = this.posts.filter(item=>item.id !==id);
-      alert("Todo Deleted Successfully !!!")
+      alert("Deleted Successfully !!!")
     })
   }
 }

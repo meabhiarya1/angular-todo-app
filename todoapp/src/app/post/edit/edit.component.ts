@@ -38,7 +38,7 @@ export class EditComponent {
    submit(){
     console.log(this.form.value)
     this.postService.update(this.id,this.form.value).subscribe((res:any)=>{
-      alert("Data Updated Successfull ☺");
+      alert("Data Updated Successfully ☺");
       this.router.navigateByUrl('post/index')
     })
    }
